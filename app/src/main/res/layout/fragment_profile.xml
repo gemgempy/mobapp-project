@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textAlignment="center"
+        android:text="Profile"
+        android:textColor="@color/font_nama"
+        android:paddingVertical="10dp"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="20dp">
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Name"
+        android:textColor="@color/neutral_grey"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Your Name Here"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/font_nama"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/title_email"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Email"
+        android:textColor="@color/neutral_grey"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Your Email Here"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/font_nama"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/title_phone"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Phone"
+        android:textColor="@color/neutral_grey"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Your Phone Here"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/font_nama"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/title_address"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Address"
+        android:textColor="@color/neutral_grey"
+        android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/buat_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_change_profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Change Profile"
+        android:textColor="@color/white"
+        android:textSize="14sp">
+    </Button>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/button123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Our Website" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_btn_secondary"
+        android:text="Sign Out"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white" />
+
+</LinearLayout>

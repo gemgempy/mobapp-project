@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChangeProfileActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/btn_back_form_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Change Profile"
+            android:textColor="@color/font_nama"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:orientation="vertical"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Name"
+            android:textColor="@color/neutral_grey"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Your Name Here"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/font_nama"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title_email"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Email"
+            android:textColor="@color/neutral_grey"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Your Email Here"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/font_nama"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title_phone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Phone"
+            android:textColor="@color/neutral_grey"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Your Phone Here"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/font_nama"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title_address"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Address"
+            android:textColor="@color/neutral_grey"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Your Address Here"
+            android:maxLines="2"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/font_nama"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_errortext_UPDATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/primary_red"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="save"
+        android:onClick="SAVE_BTN"
+        android:textColor="@color/white"
+        android:textSize="14sp">
+    </Button>
+
+</LinearLayout>

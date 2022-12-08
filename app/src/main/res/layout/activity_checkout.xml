@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CheckoutActivity"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="#eee">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping Address"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/edt_alamat_rumah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingHorizontal="20dp"
+                    android:maxLines="2"
+                    android:textColor="@color/font_nama"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/title_owner"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Owner"
+                android:textColor="@color/neutral_grey"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edt_nama_kartu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/font_nama"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/title_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Card Number"
+                android:textColor="@color/neutral_grey"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edt_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/font_nama"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/title_cvv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="CVV"
+                android:textColor="@color/neutral_grey"
+                android:textSize="11sp"/>
+
+            <EditText
+                android:id="@+id/edt_cvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/font_nama"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/title_exp_date"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Expiration Date"
+                android:textColor="@color/neutral_grey"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edt_exp_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btn_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="10dp"
+        android:text="Place order" />
+
+</LinearLayout>
