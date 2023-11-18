@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.buku"
-        minSdk 19
+        minSdk 28
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -17,7 +17,8 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

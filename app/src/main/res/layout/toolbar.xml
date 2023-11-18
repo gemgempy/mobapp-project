@@ -12,7 +12,7 @@
 
     android:layout_height="wrap_content"
 
-    tools:context=".activity.DetailBookActivity">
+    tools:context=".activity.DetailCucianActivity">
 
 
 
@@ -31,7 +31,7 @@
 
         app:paddingEnd="5dp"
 
-        android:background="@color/dark_blue"
+        android:background="@color/light_green"
 
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
 

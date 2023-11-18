@@ -28,7 +28,7 @@
                 android:paddingVertical="10dp">
                 <!-- Title, secondary and supporting text -->
                 <ImageView
-                    android:id="@+id/img_buku"
+                    android:id="@+id/img_cucian"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/logo" />
@@ -39,34 +39,32 @@
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp">
 
-                <TextView
-                    android:id="@+id/tv_judul_buku"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Judul Buku"
-                    android:textSize="15dp"
-                    android:paddingVertical="10dp"
-                    android:textColor="@color/dark_blue"
-                    android:fontFamily="@font/poppins_regular"
-                    />
-                <TextView
-                    android:id="@+id/tv_harga_buku"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Harga"
-                    android:fontFamily="@font/poppins_regular"
-                    android:maxLines="2"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary"
-                    />
+                    <TextView
+                        android:id="@+id/tv_judul_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:paddingVertical="10dp"
+                        android:text="Jenis Pakaian"
+                        android:textColor="@color/light_green"
+                        android:textSize="15dp" />
 
                     <TextView
-                        android:id="@+id/ID_BUKU_CART"
+                        android:id="@+id/tv_harga_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="2"
+                        android:text="Harga"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/light_green" />
+
+                    <TextView
+                        android:id="@+id/ID_CUCIAN_CART"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_regular"
                         android:maxLines="2"
-                        android:text="ID_CART"
                         android:textAppearance="?attr/textAppearanceBody2"
                         android:textColor="?android:attr/textColorSecondary" />
 
@@ -83,16 +81,18 @@
                 android:paddingVertical="10dp">
 
                 <TextView
-                    android:layout_width="184dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:paddingVertical="5dp"
-                    android:text="Quantity"></TextView>
+                    android:text="Qty"
+                    android:textColor="#689F38"></TextView>
 
                 <LinearLayout
-                    android:layout_width="162dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
-
                     <Button
                         android:id="@+id/btn_min"
                         android:layout_width="20dp"
@@ -126,11 +126,12 @@
             <Button
                 android:id="@+id/btn_hapus"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginVertical="8dp"
                 android:paddingVertical="5dp"
-                android:text="Hapus"></Button>
+                android:text="Hapus">
+            </Button>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 

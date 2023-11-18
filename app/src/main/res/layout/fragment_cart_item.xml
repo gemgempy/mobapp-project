@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checkout_item_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.CartItemFragment"
+    android:padding="10dp"
+    android:background="#eee">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_checkout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+                <!-- Title, secondary and supporting text -->
+                <ImageView
+                    android:id="@+id/img_cucian"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_judul_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:paddingVertical="10dp"
+                        android:text="Jenis Pakaian"
+                        android:textColor="@color/light_green"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_harga_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="2"
+                        android:text="Harga"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:text="Kuantitas"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_min"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/btn_min"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/edt_qty"
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/stroke"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <Button
+                        android:id="@+id/btn_plus"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_plus" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btn_hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingVertical="5dp"
+                android:layout_gravity="right"
+                android:text="Hapus"
+                android:layout_marginVertical="8dp">
+            </Button>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

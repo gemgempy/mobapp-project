@@ -17,30 +17,10 @@
         android:paddingHorizontal="15dp">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:src="@drawable/logo" />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Welcome to\nHIHANGHOHENG Book Store!"
-            android:textAlignment="center"
-            android:textColor="@color/font_nama"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/poppins_regular"
-            android:text="Please, sign in to continue!"
-            android:textColor="@color/font_nama"
-            android:textSize="12sp" />
+            app:srcCompat="@drawable/logoo" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outlinedTextField"
@@ -105,8 +85,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_light"
-                android:text="Don't have any account?"
+                android:fontFamily="sans-serif-black"
+                android:text="Belum punya akun?"
                 android:textColor="@color/font_nama"
                 android:textSize="12sp" />
 
@@ -115,9 +95,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="sans-serif-black"
                 android:text="Sign Up"
-                android:textColor="@color/font_nama"
+                android:textColor="@color/light_green"
                 android:textSize="12sp" />
 
         </LinearLayout>

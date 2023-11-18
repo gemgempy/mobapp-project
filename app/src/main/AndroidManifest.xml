@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.buku">
+    package="com.example.iclean">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,33 +13,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Buku"
+        android:theme="@style/Theme.Cucian"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".activity.WebViewActivity"
+            android:name="com.example.iclean.activity.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MapsActivity"
+            android:name="com.example.iclean.activity.MapsActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ChangeProfileActivity"
+            android:name="com.example.iclean.activity.ChangeProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SearchActivity"
+            android:name="com.example.iclean.activity.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.CheckoutActivity"
+            android:name="com.example.iclean.activity.CheckoutActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.HomeActivity"
+            android:name="com.example.iclean.activity.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home" />
         <activity
-            android:name=".activity.DetailBookActivity"
+            android:name="com.example.iclean.activity.DetailCucianActivity"
             android:exported="false" />
         <activity
-            android:name=".auth.SignInActivity"
+            android:name="com.example.iclean.auth.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".auth.SignUpActivity"
+            android:name="com.example.iclean.auth.SignUpActivity"
             android:exported="false" />
 
         <meta-data

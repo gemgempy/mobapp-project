@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.buku.fragment.HomeFragment"
+        android:name="com.example.iclean.fragment.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_cart"
-        android:name="com.example.buku.fragment.CartFragment"
+        android:name="com.example.iclean.fragment.CartFragment"
         android:label="Cart"
         tools:layout="@layout/fragment_cart" />
 
     <fragment
         android:id="@+id/navigation_history"
-        android:name="com.example.buku.fragment.HistoryFragment"
+        android:name="com.example.iclean.fragment.HistoryFragment"
         android:label="History"
         tools:layout="@layout/fragment_history" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.buku.fragment.ProfileFragment"
+        android:name="com.example.iclean.fragment.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
 

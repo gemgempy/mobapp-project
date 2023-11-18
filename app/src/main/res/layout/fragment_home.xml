@@ -10,45 +10,50 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/dark_blue">
+        android:background="#FFFFFF"
+        android:paddingVertical="10dp">
+
         <LinearLayout
             android:id="@+id/ll_searchView"
-            android:layout_width="380dp"
-            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/searchstroke"
             android:orientation="horizontal"
-            android:background="@drawable/searchstroke">
+            android:paddingVertical="13dp">
+
             <ImageView
                 android:id="@+id/imageView"
-                android:paddingHorizontal="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:paddingHorizontal="5dp"
                 android:src="@android:drawable/ic_menu_search" />
+
             <TextView
-                android:layout_gravity="center"
-                android:paddingHorizontal="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:paddingHorizontal="8dp"
+                android:text="Cari"
                 android:textColor="@color/neutral_grey"
-                android:text="Search Here">
-            </TextView>
+                android:textSize="18dp"></TextView>
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="45dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.viewpager2.widget.ViewPager2
+            <ViewFlipper
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:id="@+id/vp_banner" />
+                android:id="@+id/v_flipper">
+            </ViewFlipper>
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
@@ -64,13 +69,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="New Books"
-                    android:textColor="@color/neutral_dark"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Cuci Basah"
+                    android:textColor="@color/light_green"
                     android:textSize="14sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_new_book"
+                    android:id="@+id/rv_new_cucian"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -88,9 +93,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Popular Books"
-                    android:textColor="@color/neutral_dark"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Cuci Premium"
+                    android:textColor="@color/light_green"
                     android:textSize="14sp" />
 
                 <LinearLayout
@@ -100,7 +105,7 @@
                     android:layout_weight="1">
 
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rv_popular_book"
+                        android:id="@+id/rv_popular_cucian"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
 

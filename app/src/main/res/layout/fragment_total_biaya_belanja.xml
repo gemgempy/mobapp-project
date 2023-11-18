@@ -8,32 +8,37 @@
     android:background="@drawable/stroke2"
     android:paddingHorizontal="13dp"
     android:paddingVertical="8dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Shipping"
-            android:textStyle="bold"
-            android:fontFamily="@font/poppins_regular"/>
+            android:fontFamily="sans-serif-black"
+            android:text="Pengiriman"
+            android:textColor="#689F38"
+            android:textStyle="bold" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingVertical="8dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Regular"
-                    android:fontFamily="@font/poppins_regular"/>
+                    android:fontFamily="sans-serif-black"
+                    android:text="Reguler"
+                    android:textColor="#689F38" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/dark_blue"
+                    android:fontFamily="sans-serif-black"
                     android:text="Rp 0"
                     android:textAlignment="textEnd"
-                    android:fontFamily="@font/poppins_bold"/>
+                    android:textColor="@color/light_green" />
         </LinearLayout>
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
@@ -43,28 +48,31 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingVertical="12dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Total"
-            android:fontFamily="@font/poppins_bold"/>
-        <TextView
-            android:id="@+id/tv_total_harga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@color/dark_blue"
-            android:text="Rpxxx"
-            android:textAlignment="textEnd"
-            android:fontFamily="@font/poppins_bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Total"
+                    android:textColor="#689F38" />
+
+                <TextView
+                    android:id="@+id/tv_total_harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Rpxxx"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/light_green" />
         </LinearLayout>
+
         <Button
             android:id="@+id/btn_payment"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:text="Payment"
-            android:background="@drawable/stroke">
-        </Button>
+            android:background="@drawable/stroke"
+            android:text="Bayar"></Button>
 
 </LinearLayout>

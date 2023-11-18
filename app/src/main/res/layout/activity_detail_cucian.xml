@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neutral_color"
+    tools:context=".activity.DetailCucianActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_view_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="310dp"
+                        android:background="@color/white"
+                        android:src="@drawable/logo" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_jenis_pakaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tv_judul_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Jenis Layanan"
+                        android:textColor="@color/light_green"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_harga_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Rpxxxx"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="20sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Deskripsi Layanan"
+                        android:textColor="@color/light_green"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_desc_cucian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:ellipsize="marquee"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="6"
+                        android:text="Deskripsi"
+                        android:textColor="@color/light_green"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Book Detail"
+                        android:textColor="#00FFFFFF"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Max Berat"
+                                android:textColor="#223263"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_max_berat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="sans-serif"
+                                android:text="Max Berat"
+                                android:textColor="#0277BD"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Mulai Berlaku"
+                                android:textColor="@color/neutral_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_mulai_berlaku"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Mulai_Berlaku"
+                                android:textColor="@color/neutral_grey"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Stock"
+                                android:textColor="@color/neutral_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_max_jumlah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="3"
+                                android:textColor="@color/neutral_grey"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Kesulitan"
+                                android:textColor="#223263"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_kesulitan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="ISBN"
+                                android:textColor="@color/neutral_grey"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Popularitas"
+                                android:textColor="@color/neutral_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_jenis_cucian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/publisher"
+                                android:textColor="@color/neutral_grey"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

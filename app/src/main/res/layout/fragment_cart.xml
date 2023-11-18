@@ -27,10 +27,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:fontFamily="@font/poppins_semibold"
+                android:fontFamily="sans-serif-black"
                 android:gravity="center"
-                android:text="Cart"
-                android:textColor="@color/font_nama"
+                android:text="Keranjang"
+                android:textColor="@color/light_green"
                 android:textSize="20sp" />
         </RelativeLayout>
 
@@ -42,11 +42,11 @@
             android:id="@+id/title_transaction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="sans-serif-black"
             android:paddingVertical="10dp"
-            android:text="Your carts"
-            android:textColor="@color/font_nama"
-            android:textSize="12sp" />
+            android:text="Keranjang Anda"
+            android:textColor="@color/light_green"
+            android:textSize="15sp" />
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -56,8 +56,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_cart"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="match_parent" />
 
         </androidx.core.widget.NestedScrollView>
 
@@ -71,34 +70,69 @@
         android:background="@drawable/stroke2"
         android:paddingHorizontal="13dp"
         android:paddingVertical="8dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingVertical="12dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total"
-                android:fontFamily="@font/poppins_bold"/>
+                android:fontFamily="sans-serif-black"
+                android:text="Total Harga"
+                android:textColor="#689F38" />
+
             <TextView
                 android:id="@+id/tv_total_harga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@color/dark_blue"
+                android:fontFamily="sans-serif-black"
                 android:text="Rpxxx"
                 android:textAlignment="textEnd"
-                android:fontFamily="@font/poppins_bold"/>
+                android:textColor="@color/light_green" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Total Item"
+                android:textColor="#689F38" />
+
+            <TextView
+                android:id="@+id/tv_total_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="TOTAL_ITEM"
+                android:textAlignment="textEnd"
+                android:textColor="@color/light_green" />
+
+
+
+
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/btn_payment"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:text="Payment"
-            android:background="@drawable/stroke">
-        </Button>
+            android:background="@drawable/stroke"
+            android:text="Bayar"></Button>
 
     </LinearLayout>
 </LinearLayout>

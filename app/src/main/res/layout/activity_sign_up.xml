@@ -17,30 +17,10 @@
         android:paddingHorizontal="15dp">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:src="@drawable/logo" />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Let's Get Started!"
-            android:textAlignment="center"
-            android:textColor="@color/font_nama"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/poppins_regular"
-            android:text="Create an Account"
-            android:textColor="@color/font_nama"
-            android:textSize="12sp" />
+            app:srcCompat="@drawable/logoo" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outlinedTextField"
@@ -51,7 +31,7 @@
             android:hint="Full Name">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_name"
+                android:id="@+id/edt_addresss"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -121,10 +101,10 @@
             android:layout_height="50dp"
             android:layout_marginVertical="10dp"
             android:background="@drawable/button"
-            android:fontFamily="@font/poppins_bold"
-            android:paddingHorizontal="15dp"
+            android:fontFamily="sans-serif-black"
             android:onClick="Sign_Up"
-            android:text="Sign Up"
+            android:paddingHorizontal="15dp"
+            android:text="Daftar"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -136,9 +116,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_light"
-                android:text="Already Have an Account?"
-                android:textColor="@color/font_nama"
+                android:fontFamily="sans-serif-black"
+                android:text="Sudah punya akun?"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
@@ -146,9 +126,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="sans-serif-black"
                 android:text="Sign In"
-                android:textColor="@color/font_nama"
+                android:textColor="#689F38"
                 android:textSize="12sp" />
 
         </LinearLayout>

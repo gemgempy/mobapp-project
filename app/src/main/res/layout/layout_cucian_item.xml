@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CucianItemFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_layout_cucian"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="8dp"
+        android:background="@color/light">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_cucian"
+                android:layout_width="115dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_upload" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_jenis_pakaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:maxLines="2"
+                    android:text="Jenis Pakaian"
+                    android:textColor="@color/light_green"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_judul_cucian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:maxLines="2"
+                    android:paddingVertical="5dp"
+                    android:text="Nama Jenis"
+                    android:textColor="@color/light_green"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_harga_cucian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Rp0000"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

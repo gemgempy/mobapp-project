@@ -26,10 +26,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Change Profile"
-            android:textColor="@color/font_nama"
+            android:text="Ubah Profil"
+            android:textColor="@color/light_green"
             android:textSize="20sp" />
     </RelativeLayout>
 
@@ -39,7 +39,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="361dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingVertical="20dp">
 
@@ -47,77 +47,54 @@
             android:id="@+id/title_name"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Name"
-            android:textColor="@color/neutral_grey"
-            android:textSize="11sp" />
+            android:fontFamily="sans-serif-black"
+            android:text="Nama"
+            android:textColor="@color/light_green"
+            android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/edt_name"
+            android:id="@+id/edt_addresss"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Your Name Here"
+            android:fontFamily="sans-serif"
             android:paddingHorizontal="20dp"
-            android:textColor="@color/font_nama"
+            android:textColor="@color/light_green"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/title_email"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="sans-serif-black"
             android:text="Email"
-            android:textColor="@color/neutral_grey"
-            android:textSize="11sp" />
+            android:textColor="@color/light_green"
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Your Email Here"
+            android:fontFamily="sans-serif"
             android:paddingHorizontal="20dp"
-            android:textColor="@color/font_nama"
+            android:textColor="@color/light_green"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/title_phone"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Phone"
-            android:textColor="@color/neutral_grey"
-            android:textSize="11sp" />
+            android:fontFamily="sans-serif-black"
+            android:text="Telepon"
+            android:textColor="@color/light_green"
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/edt_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Your Phone Here"
+            android:fontFamily="sans-serif"
             android:paddingHorizontal="20dp"
-            android:textColor="@color/font_nama"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/title_address"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Address"
-            android:textColor="@color/neutral_grey"
-            android:textSize="11sp" />
-
-        <EditText
-            android:id="@+id/edt_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Your Address Here"
-            android:maxLines="2"
-            android:paddingHorizontal="20dp"
-            android:textColor="@color/font_nama"
+            android:textColor="@color/light_green"
             android:textSize="16sp" />
 
         <TextView
@@ -132,16 +109,16 @@
             android:textSize="12sp" />
 
     </LinearLayout>
+
     <Button
         android:id="@+id/btn_save"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/button"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="save"
+        android:fontFamily="sans-serif-black"
         android:onClick="SAVE_BTN"
+        android:text="Simpan"
         android:textColor="@color/white"
-        android:textSize="14sp">
-    </Button>
+        android:textSize="14sp"></Button>
 
 </LinearLayout>

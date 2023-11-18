@@ -10,16 +10,16 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/dark_blue">
+        android:background="@color/light_green">
+
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:queryHint="Search Product Here"
+            android:background="@drawable/searchstroke"
             app:iconifiedByDefault="false"
-            android:background="@drawable/searchstroke">
-        </androidx.appcompat.widget.SearchView>
+            app:queryHint="Cari "></androidx.appcompat.widget.SearchView>
     </androidx.appcompat.widget.Toolbar>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/search_book"

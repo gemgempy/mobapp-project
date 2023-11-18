@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/img_buku"
+                        android:id="@+id/img_cucian"
                         android:layout_width="match_parent"
                         android:layout_height="310dp"
                         android:background="@color/white"
@@ -51,30 +51,29 @@
                     android:paddingVertical="15dp">
 
                     <TextView
-                        android:id="@+id/tv_author"
+                        android:id="@+id/tv_jenis_pakaian"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Author" />
+                        android:layout_height="match_parent" />
 
                     <TextView
-                        android:id="@+id/tv_judul_buku"
+                        android:id="@+id/tv_judul_cucian"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:fontFamily="@font/poppins_bold"
+                        android:ellipsize="marquee"
+                        android:fontFamily="sans-serif-black"
                         android:gravity="center_vertical"
                         android:maxLines="2"
-                        android:ellipsize="marquee"
-                        android:text="Judul Buku"
-                        android:textColor="@color/neutral_dark"
+                        android:text="Jenis Layanan"
+                        android:textColor="@color/light_green"
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/tv_harga_buku"
+                        android:id="@+id/tv_harga_cucian"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="sans-serif-black"
                         android:text="Rpxxxx"
-                        android:textColor="@color/primary_blue"
+                        android:textColor="@color/purple_500"
                         android:textSize="20sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -89,20 +88,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Book Description"
-                        android:textColor="@color/neutral_dark"
+                        android:text="Deskripsi Layanan"
+                        android:textColor="@color/light_green"
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/tv_desc_buku"
+                        android:id="@+id/tv_desc_cucian"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
+                        android:ellipsize="marquee"
                         android:fontFamily="@font/poppins_regular"
                         android:maxLines="6"
-                        android:ellipsize="marquee"
                         android:text="Deskripsi"
-                        android:textColor="@color/neutral_grey"
+                        android:textColor="@color/light_green"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -146,7 +145,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/tv_jml_hal"
+                                android:id="@+id/tv_max_berat"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
@@ -165,7 +164,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/tv_tgl_terbit"
+                                android:id="@+id/tv_mulai_berlaku"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
@@ -192,7 +191,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/tv_isbn"
+                                android:id="@+id/tv_kesulitan"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
@@ -211,7 +210,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
-                                android:id="@+id/tv_penerbit"
+                                android:id="@+id/tv_jenis_cucian"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"

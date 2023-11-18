@@ -11,12 +11,13 @@
     <color name="font_nama">#31344C</color>
 
     <color name="primary_blue">#40BFFF</color>
-    <color name="dark_blue">#003060</color>
+    <color name="light_green">#FF689F38</color>
     <color name="neutral_grey">#9098B1</color>
-    <color name="light">#EBF0FF</color>
+    <color name="light">#4CAF50</color>
     <color name="neutral_color">#FAFAFA</color>
     <color name="neutral_dark">#223263</color>
     <color name="primary_red">#FB7181</color>
 
     <color name="nav_bar_color">#D6FFFC</color>
+
 </resources>

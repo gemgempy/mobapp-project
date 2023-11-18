@@ -9,10 +9,42 @@
     android:background="#eee">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/title_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:text="Alamat Pengiriman"
+                android:textColor="#689F38"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_addresss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="5dp"
         android:backgroundTint="@color/white">
 
         <LinearLayout
@@ -25,111 +57,145 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="15dp">
                 <!-- Title, secondary and supporting text -->
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Shipping Address"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    />
-                <EditText
-                    android:id="@+id/edt_alamat_rumah"
+                    android:id="@+id/title_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Pesanan Anda"
+                    android:textColor="#689F38"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:paddingHorizontal="20dp"
-                    android:maxLines="2"
-                    android:textColor="@color/font_nama"
-                    android:textSize="16sp"/>
+                    android:paddingVertical="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Pesanan"
+                        android:textColor="#AFB42B" />
+
+                    <TextView
+                        android:id="@+id/Summary_item_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Summary_Item"
+                        android:textAlignment="textEnd"
+                        android:textColor="#689F38" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Pembayaran"
+                        android:textColor="#AFB42B" />
+
+                    <TextView
+                        android:id="@+id/Total_payment_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Total_Pembayaran"
+                        android:textAlignment="textEnd"
+                        android:textColor="#689F38" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card2"
+        android:id="@+id/card3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="5dp"
-        android:backgroundTint="@color/white">
-
+        android:backgroundTint="@color/white"
+        android:layout_weight="1">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="15dp">
-            <TextView
-                android:id="@+id/title_owner"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="Owner"
-                android:textColor="@color/neutral_grey"
-                android:textSize="11sp" />
-
-            <EditText
-                android:id="@+id/edt_nama_kartu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:paddingHorizontal="20dp"
-                android:textColor="@color/font_nama"
-                android:textSize="16sp"/>
+            android:padding="15dp"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/title_card_number"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="Card Number"
-                android:textColor="@color/neutral_grey"
-                android:textSize="11sp" />
-
-            <EditText
-                android:id="@+id/edt_card_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:paddingHorizontal="20dp"
-                android:textColor="@color/font_nama"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/title_cvv"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="CVV"
-                android:textColor="@color/neutral_grey"
-                android:textSize="11sp"/>
-
-            <EditText
-                android:id="@+id/edt_cvv"
+                android:fontFamily="sans-serif-black"
+                android:text="Upload Bukti Pembayaran"
+                android:textColor="#689F38"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:paddingHorizontal="20dp"
-                android:textColor="@color/font_nama"
-                android:textSize="16sp"/>
-
-            <TextView
-                android:id="@+id/title_exp_date"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="Expiration Date"
-                android:textColor="@color/neutral_grey"
-                android:textSize="11sp" />
-
-            <EditText
-                android:id="@+id/edt_exp_date"
+                android:orientation="vertical"
+                android:paddingVertical="8dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date" />
+                android:paddingVertical="3dp">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reekening:   "
+                    android:textAlignment="textEnd"
+                    android:textColor="#AFB42B" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="iCleanLaundry"
+                    android:textColor="#689F38" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nomor Rekening:  "
+                    android:textAlignment="textEnd"
+                    android:textColor="#AFB42B" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="1234567890123456"
+                    android:textColor="#689F38" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+        <ImageView
+            android:id="@+id/image_piew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/saveimg"
+            android:layout_gravity="center">
+        </ImageView>
         </LinearLayout>
+
     </com.google.android.material.card.MaterialCardView>
 
     <Button
@@ -137,6 +203,6 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginVertical="10dp"
-        android:text="Place order" />
+        android:text="PESAN" />
 
 </LinearLayout>
